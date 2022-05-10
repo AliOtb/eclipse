@@ -1,0 +1,70 @@
+
+public abstract class Person {
+	
+	
+	String name;
+	int age;
+	String job;
+	
+	
+	public Person (String name,int age,String job ) {
+		this.name= name;
+		this.age=age;
+		this.job=job;
+	}
+	
+	
+	public abstract void print_sha();
+	
+
+}
+
+///
+
+
+public class Student extends Person {
+	
+	
+	int student_id;
+	
+	
+	public Student (String name,int age,String job, int student_id ) {
+		super (name, age, job);
+		
+		this. student_id=  student_id;
+	}
+	
+	 
+	public void print_sha() {
+		System.out.println(name + "(" + age + " yesrs old): " +   "JOB: " + student_id);
+		
+	}
+
+	
+}
+
+///
+
+
+public class Employee extends Person {
+	
+	int Employee_id;
+	
+	
+	
+	public Employee (String name,int age,String job,int Employee_id ) {
+		super (name, age, job);
+		
+		this. Employee_id=  Employee_id;
+	}
+	
+	
+	public void print_sha() {
+		System.out.println(name + "(" + age + " yesrs old): " +   "JOB: " + Employee_id);
+	}
+	
+
+	
+}
+
+/:
